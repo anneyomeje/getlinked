@@ -53,9 +53,9 @@ html {
     /*background-color: aliceblue;*/
 }
 
-.logo, .nav-links, a {
+/*.logo, .nav-links, a {
     border: 1px solid red;
-}
+}*/
 
 .logo {
     font-size: 3.6rem;
@@ -75,10 +75,14 @@ a {
 
 
 .nav-links {
-   
+    display: flex;
     font-size: 1.6rem;
-    max-width: 80rem;
-    
+    min-width: 50rem;
+    justify-content: center;
+}
+
+.active {
+    display: block;
 }
 
  .nav-links a {
@@ -90,21 +94,45 @@ a {
     padding: 16px 52px;
     border-radius: 4px;
     background: var(--primary-color);
-  border-style: none;
-  color: var(--white);
+    border-style: none;
+    color: var(--white);
 }
 
 .hamburger {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 36px 75px;
+    }
+
+    .nav-links {
+        min-width: 35rem;
+    }
+
+    .nav-links a {
+        margin: 1rem;
+     }
+
+}
+
+@media screen and (max-width: 768px) {
     html {
         font-size: 6px;
     }
 
     .navbar {
         padding: 36px 64px;
+    }
+
+    .nav-btn, .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        background: var(--bg-color);
+        display: block;
     }
 }
 
@@ -116,15 +144,6 @@ a {
 
     .navbar {
         padding: 36px 48px;
-    }
-
-    .nav-btn, .nav-links {
-        display: none;
-    }
-
-    .hamburger {
-        background: var(--bg-color);
-        display: block;
-    }
+    } 
     
 }
