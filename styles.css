@@ -44,18 +44,25 @@ html {
     color: var(--white);
 }
 
+.linked {
+    color: #D434FE;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     flex: 1;
+    border-bottom: 1px solid #FFFFFF2E;
+    align-items: center;
     padding: 6rem 12.8rem  3rem;
     /*background-color: aliceblue;*/
+    position: relative;
 }
 
-.logo, .nav-links, a {
+/* .logo, .nav-links, a {
     border: 1px solid red;
-}
+}*/
 
 .logo {
     font-size: 3.6rem;
@@ -73,6 +80,17 @@ a {
 
 }
 
+.nav-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 85px;
+}
+
+.nav-btn {
+    cursor: pointer;
+}
 
 .nav-links {
    
@@ -90,12 +108,78 @@ a {
     padding: 16px 52px;
     border-radius: 4px;
     background: var(--primary-color);
-  border-style: none;
-  color: var(--white);
+    border-style: none;
+    color: var(--white);
+    cursor: pointer;
 }
 
 .hamburger {
     display: none;
+}
+
+.mobile-nav-links-container {
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+    z-index:999;
+    right: 10px;
+    background-color: var(--bg-color);
+    height: 492px;
+    width: 348px;
+    display: none;
+    flex-direction: column;
+    padding: 35px;
+    border-radius: 8px;
+    border: 0.50px rgba(255, 255, 255, 0.04) solid;
+}
+
+.close-icon-container {
+    padding: 8px;
+    border-radius: 20px;
+    background-color: transparent;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.close-btn {
+    border: 1px solid #903AFF;
+    padding: 2px 5px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.close {
+    color: #F8F8F8;
+    height: 8px;
+    width: 8px;
+}
+
+.mobile-nav-links {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-nav-links--link {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.mobile-nav-btn {
+    padding: 16px 52px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    border-style: none;
+    color: var(--white);
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 700px) {
@@ -125,6 +209,18 @@ a {
     .hamburger {
         background: var(--bg-color);
         display: block;
+    }
+
+    .mobile-nav-links-container {
+        display:block
+    }
+
+    .close-btn {
+        border: 1px solid #903AFF;
+        padding: 5px 6px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
     }
     
 }
