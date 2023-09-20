@@ -1,8 +1,8 @@
 const navbarToggle = document.getElementById("navbar-toggle");
-const navbarToggle2 = document.getElementById("navbar-toggle2");
 const mobileNavbar = document.getElementById("mobile-navbar");
+const closeBtn = document.querySelector(".close-btn")
 
-    navbarToggle.addEventListener("onOpen", onOpen = () => {
+    navbarToggle.addEventListener("click", onOpen = () => {
         if (mobileNavbar.style.display === "none") {
             mobileNavbar.style.display = "block";
         } else {
@@ -10,7 +10,7 @@ const mobileNavbar = document.getElementById("mobile-navbar");
         }
     });
 
-    navbarToggle2.addEventListener("onClose", onClose = () => {
+    closeBtn.addEventListener("click", onClose = () => {
         if (mobileNavbar.style.display === "block") {
             mobileNavbar.style.display = "none";
         } else {

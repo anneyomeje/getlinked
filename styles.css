@@ -139,25 +139,23 @@ a {
 
 .close-icon-container {
     padding: 8px;
-    border-radius: 20pxq;
     background-color: transparent;
-    margin-top: 25px;  /*i think we should remove this line*/
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-/*.close-btn {
-    /*border: 1px solid #903AFF;
-    padding: 2px 5px;
-    border-radius: 50%;
+.close-btn {
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     cursor: pointer;
-}*/
+    position: relative;
+}
 
 .close {
+    position: absolute;
     color: #F8F8F8;
     height: 8px;
     width: 8px;
