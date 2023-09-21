@@ -1,3 +1,4 @@
+
 :root {
     --bg-color: #150E28;
     --white: #FFF;
@@ -19,20 +20,33 @@
     /* Add more font formats and sources as needed */
 }
 
-/* Montserrat */
+/* Montserrat Bold*/
 @font-face {
-    font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat/Fonts/OTF/Montserrat-Regular.otf') format('otf'),
-         url('./assets/fonts/Montserrat/Fonts/WEB/fonts/Montserrat-Regular.woff') format('woff'),
-         url('./assets/fonts/Montserrat/Fonts/WEB/fonts/Montserrat-Regular.woff2') format('woff2');
+    font-family: 'Montserrat Bold';
+    src: url('./assets/fonts/Montserrat/static/Montserrat-BoldItalic.ttf');
+         
+         
     /* Add more font formats and sources as needed */
 }
 
+/* Montserrat*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat/static/Montserrat-Regular.ttf');
+         
+         
+    /* Add more font formats and sources as needed */
+}
+
+@font-face {
+    font-family: 'Unica one';
+    src: url('./assets/fonts/');
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
     overscroll-behavior: none;
-    
+    overflow-x: hidden;
 }
 
 * {
@@ -204,22 +218,89 @@ a {
 .header {
     height: 100%;
     display: flex;
-    flex-direction: column;
-    /*position: relative;*/
-}*/
+   flex-direction: column;
+}
+
+.top-text {
+    font-size: 3.6rem;
+    font-family: 'Montserrat Bold';
+}
+
+.bord {
+    border: 1px solid pink;
+}
 
 .top-text-and-stroke {
-    text-align: right;
-    /*position: absolute;
-    right: 0px;*/
+    margin-top: 32px;
+    margin-right: 55px;
+   text-align: right;
+   font-weight: 700;
 }
 
-.gray-star {
-    width: 26px;
-    height: 32px;   
+.bottom-text-and-images {
+    display: flex;
+    justify-content: space-between;
 }
+
+/*.side-texts-btn-icons, .images {
+    
+    max-width: 48%;
+}*/
 
 .images {
+    /*border: 1px solid green;*/
+    position: relative;
+}
+
+
+
+.images img {
+    max-width: 100%;
+    height: auto;
+}
+
+#bubbles {
+    margin-right: 40px;
+}
+
+#smart-glasses {
+    /*width: 828px;*/
+    /*height: 715px;*/
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.side-texts-btn-icons {
+    margin-left: 118px;
+}
+
+.side-head {
+    font-size: 8rem;
+    font-family: 'Clash Display';
+    font-weight: 700;
+}
+
+.side-text {
+    font-size: 2rem;
+    margin-top: 8px;
+}
+
+.side-btn {
+    padding: 16px 52px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    border-style: none;
+    color: var(--white);
+    margin-top: 41px;
+}
+
+.timers {
+    margin-top: 77px;
+}
+
+/*.images {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -232,15 +313,16 @@ a {
    background-color: rgba(var(--bg-color) 0.04);
    border: 1px solid green;
    
-}
+}*/
 
-#bubbles{
+
+/*#bubbles{
     width: 667px;
     height: 641px;
     margin-top: 190px;
     margin-right: 40px;
     border: 1px solid green;
-}
+}*/
 
 /*#smart-glasses {
     width: 828px;
@@ -253,14 +335,7 @@ a {
     background-blend-mode: luminosity;
 }*/
 
-section div {
-    border: 1px solid gold;
-    
-}
 
-.top-text {
-    font-size: 3.6rem;
-}
 
 @media screen and (max-width: 700px) {
     html {
