@@ -1,0 +1,99 @@
+:root {
+    --bg-color: #150E28;
+    --white: #FFF;
+    --primary-color: linear-gradient(
+        270deg,
+        #903aff 0%,
+         #d434fe 56.42%,
+        #ff26b9 99.99%,
+        #fe34b9 100%
+      );
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Clash Display */
+@font-face {
+    font-family: 'Clash Display';
+    src:  url('./assets/fonts/Clash_Display/Fonts/WEB/fonts/ClashDisplay-Semibold.woff')format('woff'), 
+    url('./assets/fonts/Clash_Display/Fonts/WEB/fonts/ClashDisplay-Semibold.woff2') format('woff2') ;
+    /* Add more font formats and sources as needed */
+}
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat/Fonts/OTF/Montserrat-Regular.otf') format('otf'),
+         url('./assets/fonts/Montserrat/Fonts/WEB/fonts/Montserrat-Regular.woff') format('woff'),
+         url('./assets/fonts/Montserrat/Fonts/WEB/fonts/Montserrat-Regular.woff2') format('woff2');
+    /* Add more font formats and sources as needed */
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat';
+    background: var(--bg-color);
+    color: var(--white);
+}
+
+.linked {
+    color: #D434FE;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid red;*/
+    flex: 1;
+    align-items: center;
+    padding: 6rem 12.8rem  3rem;
+    /*background-color: aliceblue;*/
+    position: relative;
+}
+
+.logo {
+    font-size: 3.6rem;
+    font-family: 'Clash Display';
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+.nav-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 85px;
+}
+
+.nav-links {
+    display: flex;
+    font-size: 1.6rem;
+    min-width: 50rem;
+    justify-content: center;
+}
+
+.nav-links a {
+    margin: 2rem;
+ }
+
+.nav-btn{
+    padding: 16px 52px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    border-style: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
