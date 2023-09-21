@@ -380,8 +380,6 @@ a {
     }
 
     .close-btn {
-        border: 1px solid #903AFF; 
-        padding: 5px 6px;
         border-radius: 50%;
         align-items: center;
         justify-content: center;
