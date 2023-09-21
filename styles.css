@@ -93,10 +93,14 @@ a {
 }
 
 .nav-links {
-   
+    display: flex;
     font-size: 1.6rem;
-    max-width: 80rem;
-    
+    min-width: 50rem;
+    justify-content: center;
+}
+
+.active {
+    display: block;
 }
 
  .nav-links a {
@@ -135,25 +139,23 @@ a {
 
 .close-icon-container {
     padding: 8px;
-    border-radius: 20px;
     background-color: transparent;
-    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
 .close-btn {
-    border: 1px solid #903AFF;
-    padding: 2px 5px;
-    border-radius: 50%;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     cursor: pointer;
+    position: relative;
 }
 
 .close {
+    position: absolute;
     color: #F8F8F8;
     height: 8px;
     width: 8px;
@@ -189,6 +191,15 @@ a {
 
     .navbar {
         padding: 36px 64px;
+    }
+
+    .nav-btn, .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        background: var(--bg-color);
+        display: block;
     }
 }
 
