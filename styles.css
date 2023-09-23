@@ -347,6 +347,181 @@ a {
     width: 52.2rem;
 }
 
+/* beginning of registration page design */
+/* i needed to remove the border bottom */
+.navbar-registration{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    padding: 6rem 12.8rem  3rem;
+    position: relative;
+}
+
+.nav-words:hover{
+    background-color:  #D434FE;
+    border: #D434FE 1px solid;
+    border-radius: 0.5rem;
+  
+}
+
+.registration-nav-btn1{
+    padding: 16px 52px;
+    border-radius: 4px;
+    border-color:#d434fe;
+    background: transparent;
+    color: var(--white);
+    cursor: pointer;
+}
+.registration-nav-btn1:hover{
+    background: #D434FE;
+     
+}
+
+.components{
+    display: flex;
+   
+}
+
+
+.Register{
+    color: #D434FE;
+    font-size: xx-large;
+     
+}
+
+
+    .content{
+        margin-top: 40px;
+    }
+
+    .text-andIcon-div{
+        display: flex;
+margin-top: 30px;
+    }
+    #text{
+    margin-top: 20px;
+    }
+    
+    .icons{
+display: flex;
+    }
+
+    #path{
+     color: #D434FE;
+     
+            }
+    .grid{
+        display: grid;
+    }
+
+    .registration-text{
+        margin-top:20px;
+        font-size: x-large;
+    }
+    .form-name{
+margin-top: 30px;
+    }
+    .formBox-and-name2{
+margin-left: 30px;
+    }
+
+    .form-box{
+        padding: 20px 40px 20px 40px;
+        background: transparent;
+        border: var(--white) 2px solid;
+        margin-top: 10px;
+        border-radius: 0.5rem;
+        color: var(--white);
+    }
+
+    #category{
+        padding-right: 70px;
+ 
+   }
+    #category2{
+        padding-right: 145px;
+ 
+   }
+
+   .form-area{
+    display: flex;
+   }
+
+   .form-attribute-container{
+    margin: 20px;
+   }
+
+   .final-form-txt{
+    color: #D434FE;
+    padding-top: 15px;
+    padding-bottom: 20px;
+   }
+
+   #checkbox{
+    padding: 6px;
+    margin-right: 5px;
+    border: 2px solid  var(--white);
+    border-radius: 0.4rem;
+    color:white;
+    cursor:pointer;
+   }
+   
+   .checkboxAnd-text{
+display: flex;
+margin-bottom: 20px;
+   }
+
+   #register-now:hover{
+background: transparent;
+border: 1px solid #d434fe;
+   }
+   #register-now{
+    padding: 20px 250px 20px 250px;
+     margin-bottom: 20px;
+   }
+   .linked2 {
+    color: #D434FE;
+    display: none;
+}
+
+
+.registration-nav-btn1{
+    padding: 16px 52px;
+    border-radius: 4px;
+    border-color:#d434fe;
+    background: transparent;
+    color: var(--white);
+    cursor: pointer;
+}
+
+   .content{
+background-color: rgba(0, 0, 0, 0.25);
+   background: rgba(255, 255, 255, 0.03);
+   padding:50px 50px 0px 50px;
+   margin-bottom: 1px;
+   }
+
+   .linked1 {
+    color: #D434FE;
+}
+
+.nav-btn1{
+    padding: 16px 52px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    border-style: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
+/* ending of registration page design */
+
+
+
 @media screen and (min-width: 701px) and (max-width: 1050px) {
     html {
         font-size: 7px;
@@ -384,9 +559,66 @@ a {
         margin: 4rem 0;
     }
 
-    
-}
+    .components{
+        display: grid;
+    }
+    }
 
+    @media screen and (max-width: 1100px) {
+
+        .linked2 {
+            color: #D434FE;
+            display: block;
+            font-size: x-large;
+        }
+    
+        .linked1 {
+            display: none;
+        }
+        .get1 {
+            display: none;
+        }
+        .content{
+            
+               padding:10px 10px 0px 10px;
+               }
+    .registration-nav-btn1{
+     display: none;
+    }
+    
+     #register-now{
+        padding: 10px 50px 10px 50px;
+         margin-bottom: 20px;
+       }
+    
+       .register-now{
+        display: flex;
+        justify-content: center;
+       }
+    
+       .final-form-txtDIV{
+        display: flex;
+         justify-content: center;
+    }
+    
+    @media screen  and (max-width: 1300px) {
+    .components{
+        display: grid;
+        justify-content: center;
+    }
+    
+    .checkboxAnd-text{
+        display: flex;
+       justify-content: center;
+           }
+    
+    
+    
+           .form-area{
+            display: grid;
+           }
+    }
+    }    
 @media screen and (max-width: 480px) {
     html {
         font-size: 4px;
@@ -418,5 +650,24 @@ a {
     }
 
     /* Hero Section*/
+/* below is part of register page  */
+    #category{
+        padding-right: 15px;
     
-}
+    }
+    #category2{
+        padding-right: 80px;
+    
+    }
+    
+    .form-box{
+    padding: 15px 5px 15px 5px;
+    
+    }
+    
+    .components{
+        display: grid;
+    justify-content:  center;
+     
+    }
+    }
