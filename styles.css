@@ -1,12 +1,10 @@
-
 :root {
     --bg-color: #150E28;
     --white: #FFF;
-    --steel-pink: #d434fe;
     --primary-color: linear-gradient(
         270deg,
         #903aff 0%,
-         var(--steel-pink) 56.42%,
+         #d434fe 56.42%,
         #ff26b9 99.99%,
         #fe34b9 100%
       );
@@ -40,13 +38,13 @@
 
 @font-face {
     font-family: 'Unica one';
-    src: url('./assets/fonts/');
+    src: url('./assets/fonts/Unica_One/UnicaOne-Regular.ttf');
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
     overscroll-behavior: none;
-    overflow-x: hidden;
+    
 }
 
 * {
@@ -59,11 +57,11 @@ html {
     font-family: 'Montserrat';
     background: var(--bg-color);
     color: var(--white);
+    overflow-x: hidden;
 }
 
-body {
-    border: 1px solid orange;
-    position: relative;
+.linked {
+    color: #D434FE;
 }
 
 .navbar{
@@ -87,19 +85,16 @@ body {
     font-family: 'Clash Display';
 }
 
-.pink {
-    color: var(--steel-pink);
-}
+/*.nav-right {
+    display: flex;
+    max-width: 80rem;
+}*/
 
 a {
     text-decoration: none;
     color: var(--white);
 
 }
-
-/*img {
-
-}*/
 
 .nav-links-container {
     display: flex;
@@ -205,137 +200,74 @@ a {
     margin-top: 20px;
 }
 
-.container {
-    border: 1px solid red;
-    width: 100%;
-    max-width: 1200px;
-    height: 100vh;
-    padding: 0 126px;
-    margin: 0 auto;
-    
+/* Hero Section*/
+.bord {
+    border: 1px solid gold;
 }
 
-.header {
-    height: 100%;
-    display: flex;
-   flex-direction: column;
+.bord2 {
+    border: 1px solid green;
+}
+
+.top-right-text {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.top-text-and-stroke {
+   text-align: right;
 }
 
 .top-text {
     font-size: 3.6rem;
-    font-family: 'Montserrat Bold';
 }
 
-.bord {
-    border: 1px solid pink;
+.stroke {
+    width: 25.3rem;
 }
 
-.top-text-and-stroke {
-    margin-top: 32px;
-    margin-right: 55px;
-   text-align: right;
-   font-weight: 700;
-}
-
-.bottom-text-and-images {
+.left-side-up{
     display: flex;
-    justify-content: space-between;
-}
-
-/*.side-texts-btn-icons, .images {
-    
-    max-width: 48%;
-}*/
-
-.images {
-    /*border: 1px solid green;*/
-    position: relative;
-}
-
-
-
-.images img {
-    max-width: 100%;
-    height: auto;
-}
-
-#bubbles {
-    margin-right: 40px;
-}
-
-#smart-glasses {
-    /*width: 828px;*/
-    /*height: 715px;*/
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -2;
-}
-
-.side-texts-btn-icons {
-    margin-left: 118px;
-}
-
-.side-head {
-    font-size: 8rem;
+    width: 72.2rem;
     font-family: 'Clash Display';
-    font-weight: 700;
+    position: relative;
+
 }
 
-.side-text {
-    font-size: 2rem;
-    margin-top: 8px;
-}
-
-.side-btn {
-    padding: 16px 52px;
-    border-radius: 4px;
-    background: var(--primary-color);
-    border-style: none;
-    color: var(--white);
-    margin-top: 41px;
-}
-
-.timers {
-    margin-top: 77px;
-}
-
-/*.images {
+.left-side-up-icons{
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
     position: absolute;
-    right: 0;
+    right: 2.5rem;
     bottom: 0;
-    height: 100%;
-   background-image: url(./assets/images/man-wearing-smart-glasses-touching-virtual-screen\ 2.png);
-   background-size: contain; 
-   background-repeat: no-repeat;
-   background-position: bottom;
-   background-blend-mode: luminosity;
-   background-color: rgba(var(--bg-color) 0.04);
-   border: 1px solid green;
-   
+}
+
+
+/*.left-side-up-bottom, .left-side-up-head {
+    display: inline;
 }*/
 
+.left-side-up-head, .one {
+    font-size: 8rem;
+}
 
-/*#bubbles{
-    width: 667px;
-    height: 641px;
-    margin-top: 190px;
-    margin-right: 40px;
-    border: 1px solid green;
-}*/
+#chain {
+    width: 8.6rem;
+    height: 8.6rem;
+    padding: 0;
+}
 
-/*#smart-glasses {
-    width: 828px;
-    height: 715px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    border: 1px solid green;
-    background-blend-mode: luminosity;
-}*/
+#blast {
+    width: 5.8rem;
+    height: 5.8rem;
+}
 
-
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+    html {
+        font-size: 7px;
+    }
+}
 
 @media screen and (max-width: 700px) {
     html {
@@ -354,10 +286,16 @@ a {
         background: var(--bg-color);
         display: block;
     }
+
+     /*Hero Section*/
+    .top-right-text {
+        justify-content: center;
+    }
+
+    
 }
 
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
     html {
         font-size: 4px;
     }
@@ -380,9 +318,13 @@ a {
     }
 
     .close-btn {
+        border: 1px solid #903AFF;
+        padding: 5px 6px;
         border-radius: 50%;
         align-items: center;
         justify-content: center;
     }
+
+    /* Hero Section*/
     
 }
