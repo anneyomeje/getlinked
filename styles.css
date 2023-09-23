@@ -1,6 +1,7 @@
 :root {
     --bg-color: #150E28;
     --white: #FFF;
+    --pink-color: #D434FE;
     --primary-color: linear-gradient(
         270deg,
         #903aff 0%,
@@ -61,7 +62,7 @@ html {
 }
 
 .linked {
-    color: #D434FE;
+    color: var(--pink-color) ;
 }
 
 .navbar{
@@ -216,14 +217,51 @@ a {
 
 .top-text-and-stroke {
    text-align: right;
+   padding: 10px 50px 0px 0px;
+   margin-top: 2rem;
 }
 
 .top-text {
     font-size: 3.6rem;
+    font-style: italic;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 700;
 }
 
 .stroke {
     width: 25.3rem;
+}
+
+.header {
+    display: flex;
+}
+
+.header-images {
+    position: relative;
+}
+
+#smart-glasses {
+    height: 600px;
+    width: 700px;
+    position: absolute;
+    margin-right: 10rem;
+    z-index: -5px;
+}
+
+#bubbles {
+    height: 641px;
+    width: 667px;
+    z-index: 999px;
+}
+
+.googles {
+    z-index: -10px
+
+}
+
+.bubbles_container {
+    z-index: 999
 }
 
 .left-side-up{
@@ -244,12 +282,53 @@ a {
 }
 
 
-/*.left-side-up-bottom, .left-side-up-head {
+/* .left-side-up-bottom, .left-side-up-head {
     display: inline;
-}*/
+} */
 
 .left-side-up-head, .one {
-    font-size: 8rem;
+    font-size: 6.5rem;
+}
+
+.left-side-up-head {
+    padding-left: 10rem;
+    margin-top:5rem;
+}
+
+.side-text {
+    padding-left: 10rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33.20px;
+}
+
+.side-btn {
+    padding: 16px 52px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    border-style: none;
+    color: var(--white);
+    margin-top: 20px;
+    margin-left: 10rem;
+    cursor: pointer;
+}
+
+.timers {
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    gap: 4rem;
+    font-family: Unica One;
+    font-size: 5rem;
+}
+
+.small-text {
+    font-size: 15px;
+}
+
+.pink_one {
+  color: var(--pink-color);
 }
 
 #chain {
