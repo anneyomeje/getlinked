@@ -1,6 +1,7 @@
 :root {
     --bg-color: #150E28;
     --white: #FFF;
+    --pink-color: #D434FE;
     --primary-color: linear-gradient(
         270deg,
         #903aff 0%,
@@ -18,18 +19,33 @@
     /* Add more font formats and sources as needed */
 }
 
-/* Montserrat */
+/* Montserrat Bold*/
 @font-face {
-    font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat/Fonts/OTF/Montserrat-Regular.otf') format('otf'),
-         url('./assets/fonts/Montserrat/Fonts/WEB/fonts/Montserrat-Regular.woff') format('woff'),
-         url('./assets/fonts/Montserrat/Fonts/WEB/fonts/Montserrat-Regular.woff2') format('woff2');
+    font-family: 'Montserrat Bold';
+    src: url('./assets/fonts/Montserrat/static/Montserrat-BoldItalic.ttf');
+         
+         
     /* Add more font formats and sources as needed */
 }
 
+/* Montserrat*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat/static/Montserrat-Regular.ttf');
+         
+         
+    /* Add more font formats and sources as needed */
+}
+
+@font-face {
+    font-family: 'Unica one';
+    src: url('./assets/fonts/Unica_One/UnicaOne-Regular.ttf');
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
+    overscroll-behavior: none;
+    
 }
 
 * {
@@ -42,10 +58,11 @@ html {
     font-family: 'Montserrat';
     background: var(--bg-color);
     color: var(--white);
+    overflow-x: hidden;
 }
 
 .linked {
-    color: #D434FE;
+    color: var(--pink-color) ;
 }
 
 .navbar{
@@ -184,6 +201,158 @@ a {
     margin-top: 20px;
 }
 
+/* Hero Section*/
+.bord {
+    border: 1px solid gold;
+}
+
+.bord2 {
+    border: 1px solid green;
+}
+
+.top-right-text {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.top-text-and-stroke {
+   text-align: right;
+   padding: 10px 50px 0px 0px;
+   margin-top: 2rem;
+}
+
+.top-text {
+    font-size: 3.6rem;
+    font-style: italic;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.stroke {
+    width: 25.3rem;
+}
+
+.header {
+    display: flex;
+}
+
+.header-images {
+    position: relative;
+}
+
+#smart-glasses {
+    height: 600px;
+    width: 700px;
+    position: absolute;
+    margin-right: 10rem;
+    z-index: -5px;
+}
+
+#bubbles {
+    height: 641px;
+    width: 667px;
+    z-index: 999px;
+}
+
+.googles {
+    z-index: -10px
+
+}
+
+.bubbles_container {
+    z-index: 999
+}
+
+.left-side-up{
+    display: flex;
+    width: 72.2rem;
+    font-family: 'Clash Display';
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.left-side-up-icons{
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 0;
+}
+
+
+/* .left-side-up-bottom, .left-side-up-head {
+    display: inline;
+} */
+
+.left-side-up-head, .one {
+    font-size: 6.5rem;
+}
+
+.left-side-up-head {
+    padding-left: 10rem;
+    margin-top:5rem;
+}
+
+.side-text {
+    padding-left: 10rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33.20px;
+}
+
+.side-btn {
+    padding: 16px 52px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    border-style: none;
+    color: var(--white);
+    margin-top: 20px;
+    margin-left: 10rem;
+    cursor: pointer;
+}
+
+.timers {
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    gap: 4rem;
+    font-family: Unica One;
+    font-size: 5rem;
+}
+
+.small-text {
+    font-size: 15px;
+}
+
+.pink_one {
+  color: var(--pink-color);
+}
+
+#chain {
+    width: 8.6rem;
+    height: 8.6rem;
+    padding: 0;
+}
+
+#blast {
+    width: 5.8rem;
+    height: 5.8rem;
+}
+
+.side-text {
+    font-size: 2rem;
+    width: 52.2rem;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+    html {
+        font-size: 7px;
+    }
+}
+
 @media screen and (max-width: 700px) {
     html {
         font-size: 6px;
@@ -201,10 +370,24 @@ a {
         background: var(--bg-color);
         display: block;
     }
+
+     /*Hero Section*/
+     .header-texts-and-icons {
+        border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+     }
+
+    .top-right-text {
+        margin: 4rem 0;
+    }
+
+    
 }
 
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
     html {
         font-size: 4px;
     }
@@ -227,9 +410,13 @@ a {
     }
 
     .close-btn {
+        border: 1px solid #903AFF;
+        padding: 5px 6px;
         border-radius: 50%;
         align-items: center;
         justify-content: center;
     }
+
+    /* Hero Section*/
     
 }
