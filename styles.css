@@ -231,7 +231,7 @@ a {
     width: 72.2rem;
     font-family: 'Clash Display';
     position: relative;
-
+    margin-bottom: 8px;
 }
 
 .left-side-up-icons{
@@ -263,6 +263,11 @@ a {
     height: 5.8rem;
 }
 
+.side-text {
+    font-size: 2rem;
+    width: 52.2rem;
+}
+
 @media screen and (min-width: 701px) and (max-width: 1050px) {
     html {
         font-size: 7px;
@@ -288,8 +293,16 @@ a {
     }
 
      /*Hero Section*/
+     .header-texts-and-icons {
+        border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+     }
+
     .top-right-text {
-        justify-content: center;
+        margin: 4rem 0;
     }
 
     
